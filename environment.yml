@@ -1,0 +1,42 @@
+name: seaturtle-reid
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  # Core scientific computing
+  - numpy>=1.21.0
+  - pandas>=1.3.0
+  - matplotlib>=3.4.0
+  - seaborn>=0.11.0
+  - scipy>=1.7.0
+  
+  # Computer Vision and Deep Learning
+  - opencv>=4.5.0
+  - pytorch>=1.9.0
+  - torchvision>=0.10.0
+  - pillow>=8.3.0
+  - scikit-image>=0.18.0
+  
+  # Jupyter and notebook support
+  - jupyter>=1.0.0
+  - jupyterlab>=3.0.0
+  - ipython>=7.25.0
+  - ipywidgets>=7.6.0
+  
+  # Machine Learning
+  - scikit-learn>=1.0.0
+  - tqdm>=4.62.0
+  
+  # Data visualization
+  - plotly>=5.0.0
+  
+  # Utilities
+  - pyyaml>=5.4.0
+  
+  # Install additional packages via pip
+  - pip:
+    - faiss-cpu>=1.7.0
+    - albumentations>=1.0.0
